@@ -1,0 +1,66 @@
+name: sms_manager
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Local Database (Ledger, Repair Records, Inventory, Billing, Customers)
+  sqflite: ^2.3.0
+  path_provider: ^2.1.2
+
+  # Shared Preferences (Small data & settings)
+  shared_preferences: ^2.3.0
+
+  # SMS Sending
+  telephony:
+    git:
+      url: https://github.com/ShounakMulay/Telephony.git
+
+  # PDF for Bills, Reports, Warranty Cards
+  pdf: ^3.10.4
+  printing: ^5.11.0
+
+  # Excel export for Khata, Inventory
+  excel: ^2.0.1
+
+  # Charts for Analytics Dashboard
+  fl_chart: ^0.66.2
+
+  # File Picker (Import/Export Backup)
+  file_picker: ^8.0.0
+
+  # Image Picker (Customer photos, device photos)
+  image_picker: ^1.0.7
+
+  # Lottie Animations
+  lottie: ^2.6.0
+
+  # URL Launcher (WhatsApp message, call customer)
+  url_launcher: ^6.2.5
+
+  # State Management (Very simple + best for medium apps)
+  provider: ^6.1.2
+
+  # Secure Password Storage (For customer passwords)
+  flutter_secure_storage: ^9.0.0
+
+  # Firebase (optional, only if client wants cloud backup)
+  # firebase_core: ^3.0.0
+  # cloud_firestore: ^5.0.0
+  # firebase_auth: ^5.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
